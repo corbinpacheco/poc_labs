@@ -53,14 +53,17 @@ Create the file and submit it:
 This job has no schedule so to run it:
 
 `$ dcos job run gpu-test`
+
 Run ID: 20190221181651Zz7OM
 
 To query the results:
 
 `$ dcos task --completed | grep 20190221181651Zz7OM`
+
 20190221181651Zz7OM.gpu-test5          10.0.5.235  root    F    gpu-test5_20190221181651Zz7OM.fb5325c1-3604-11e9-b8f9-aaf24caedfea          fe4e7d3f-30be-46ee-9eea-040c7f3987b6-S1   ---    ---
 
 `$ dcos task --completed log gpu-test5_20190221181651Zz7OM.fb5325c1-3604-11e9-b8f9-aaf24caedfea stdout`
+
 |   0  Tesla M60           Off  | 00000000:00:1E.0 Off |                    0 |
 | N/A   28C    P8    15W / 150W |      0MiB /  7613MiB |      0%      Default |
 +-------------------------------+----------------------+----------------------+
