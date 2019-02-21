@@ -1,0 +1,15 @@
+dcos_version = "1.12.2"
+num_of_masters = "1"
+num_of_private_agents = "1"
+num_of_public_agents = "0"
+#
+aws_region = "us-west-2"
+aws_bootstrap_instance_type = "m3.large"
+aws_master_instance_type = "m4.2xlarge"
+aws_agent_instance_type = "m4.2xlarge"
+aws_public_agent_instance_type = "m4.2xlarge"
+# Inbound Master Access
+admin_cidr = "0.0.0.0/0"
+ssh_key_name = "default"
+num_of_gpu_agents = "3"
+aws_gpu_ami = "ami-d54a2cad"
